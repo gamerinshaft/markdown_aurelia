@@ -1,10 +1,43 @@
-body {
+html,body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans',Arial,Helvetica Neue,sans-serif;
 }
 
+body {
+  background: linear-gradient(89deg, #804cad, #4fb2d4);
+  background-size: 400% 400%;
+
+  -webkit-animation: splash-background 300s ease infinite;
+  -moz-animation: splash-background 300s ease infinite;
+  -o-animation: splash-background 300s ease infinite;
+  animation: splash-background 300s ease infinite;
+}
+@-webkit-keyframes splash-background {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@-moz-keyframes splash-background {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@-o-keyframes splash-background {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@keyframes splash-background {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
 .splash {
+  padding-top: 10%;
   text-align: center;
-  margin: 10% 0 0 0;
   box-sizing: border-box;
 }
 
@@ -13,7 +46,7 @@ body {
   line-height: 72px;
   text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
   text-transform: uppercase;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
 }
 
 .splash .fa-spinner {
@@ -21,7 +54,9 @@ body {
   display: inline-block;
   font-size: 72px;
   margin-top: 50px;
+  color: white;
 }
+
 
 .page-host {
   position: absolute;
